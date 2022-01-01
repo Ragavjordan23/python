@@ -69,4 +69,4 @@ tomorrow = 'saturday'
 print(today is tomorrow) # False
 print(today is not tomorrow) #True
 print(today == tomorrow)
-rint(today != tomorrow)
+print(today != tomorrow)
