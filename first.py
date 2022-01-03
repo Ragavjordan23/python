@@ -70,3 +70,27 @@ print(today is tomorrow) # False
 print(today is not tomorrow) #True
 print(today == tomorrow)
 print(today != tomorrow)
+
+# Ternary perator
+no1, no2 = 15,11
+result = no1 if no1>no2 else no2
+print(result)
+
+#
+import math
+print(math.pow(2,3)) # 8
+print(math.factorial(5)) #120
+print(math.ceil(8.2))# 9 - ceil means greator round off
+print(math.ceil(8.8)) #9
+print(math.floor(8.2)) #8 - floor means smaller round off
+print(math.floor(8.8))# 8
+print(math.floor(8.5))#8
+print(math.ceil(8.5)) #9
+print(math.pi) #3.141592653589793
+
+# sys module - command line arguments
+import sys
+print(sys.argv) # argv - arguments passed in command line
+print(sys.argv[0])
+
+
