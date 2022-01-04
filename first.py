@@ -93,4 +93,27 @@ import sys
 print(sys.argv) # argv - arguments passed in command line
 print(sys.argv[0])
 
+#Using # input find Highest & Lowest marks
+Mark1 = int(input('Enter First Mark : '))
+Mark2 = int(input('Enter Second Mark : '))
+Mark3 = int(input('Enter Third Mark : '))
+def Highest(Mark1, Mark2, Mark3):
+    if (Mark1 > Mark2) and (Mark1 > Mark3):
+        Highest_mark = Mark1
+    elif (Mark2 > Mark1) and (Mark2 > Mark3):
+        Highest_mark = Mark2
+    else:
+        Highest_mark = Mark3
+    print("The Highest Mark : ", Highest_mark)
+	
+def Lowest(Mark1, Mark2, Mark3):
+    if (Mark1 < Mark2) and (Mark1 < Mark3):
+        Highest_mark = Mark1
+    elif (Mark2 < Mark1) and (Mark2 < Mark3):
+        Lowest_mark = Mark2
+    else:
+        Lowest_mark = Mark3
+    print("The Lowest Mark : ", Lowest_mark)
+Highest(Mark1, Mark2, Mark3)
+Lowest(Mark1, Mark2, Mark3)
 
