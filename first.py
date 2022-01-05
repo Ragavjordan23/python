@@ -117,3 +117,89 @@ def Lowest(Mark1, Mark2, Mark3):
 Highest(Mark1, Mark2, Mark3)
 Lowest(Mark1, Mark2, Mark3)
 
+# looping Statement
+last = 5
+while last > 0:
+    if last==3:
+        break
+    print(last)
+    last = last-1
+else:
+     print("Hello") 
+	  
+last = 5
+while last > 0:
+    if last==3:
+        last-=1
+        continue
+    print(last)
+    last = last-1
+else:
+     print("Hello")  
+	  
+	  
+no = 1
+total = 0
+while no<=100:
+    total = total + no
+    no+=2    
+else:
+    print(total)
+	  
+no = 1
+total = 1
+while no<=5:
+    total = total * no
+    no+=2   
+else:
+    print(total)
+	  
+name = input("Enter your name:")
+length = len(name)
+i=0
+while i<length:
+    print(name[i])
+    i+=2
+	  
+name = input("Enter your name:")
+length = len(name)
+i=1
+while i<length:
+    print(name[i])
+    i+=2
+	  
+name = input("Enter your name:")
+length = len(name)
+i=0
+count = 0
+while i<length:
+    if name[i] == 'a':
+        print(name[i])
+        count+=1
+    i+=1
+else:
+    print(count)
+	  
+name = input("Enter your name:")
+length = len(name)
+i=0
+count = 0
+while i<length:
+    if name[i] == 'a' or name[i] == 'e' or name[i] == 'i'or name[i] == 'o' or name[i] == 'u':
+        print(name[i])
+        count+=1
+    i+=1
+else:
+    print(count)
+	  
+name = input("Enter your name:")
+length = len(name)
+i=0
+count = 0
+while i<length:
+    if name[i] in ['a','e','i','o','u']:
+        print(name[i])
+        count+=1
+    i+=1
+else:
+    print(count)
