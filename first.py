@@ -203,3 +203,17 @@ while i<length:
     i+=1
 else:
     print(count)
+
+# Greast common division of two numbers
+no = 100
+no1 = 120
+big = no if no>no1 else no1
+last = 0
+no2 = 1
+while no2<=big:
+    if no%no2 == 0 or no1%no2 == 0:
+        last = no2    
+    no2+=1
+else:
+    print(last) # o/p: 120
+
