@@ -217,3 +217,75 @@ while no2<=big:
 else:
     print(last) # o/p: 120
 
+# LCM
+no1 = 18
+no2 = 50
+big = no1 if no1>no2 else no2
+while True: 
+	if big%no1 ==0 and big%no2 ==0:
+		print(big, "is LCM")
+		break
+	big+=1 
+
+	  #Fibanocci series
+f = -1
+s = 1
+count = 6
+while count>0:
+    t = f+s
+    print(t)
+    f = s
+    s = t
+    count-=1
+	 
+
+name = 'Ragavjordan'
+for letter in name:
+    print(letter)
+    
+for no in range(3):
+    print(no)
+    
+for no in range(1,5):
+    print(no)
+    
+for x in range(1,22,3):
+    print(x)
+    
+for y in range(20,0,-3):
+    print(y)
+	  
+# Addition of Firt N Numbers
+total = 0
+for no in range(1,11):
+    total = total + no
+    #print(no)
+else:
+    print(total)
+    
+# Factorial
+total = 1
+for no in range(1,11):
+    total = total * no
+    #print(no)
+else:
+    print(total)
+    
+# no of words in sentence
+sent = "Today is Friday"
+count = 0
+for letter in sent:
+    if letter == ' ':
+        count+=1
+else:
+    print("no of words are",(count+1))
+	  
+	  
+# no of sentence in paragraph
+sent = "Today is Friday. Tomorrow is Saturday."
+count = 0
+for letter in sent:
+    if letter == '.':
+        count+=1
+else:
+    print("no of sentences are",(count))
