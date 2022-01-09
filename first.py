@@ -289,3 +289,23 @@ for letter in sent:
         count+=1
 else:
     print("no of sentences are",(count))
+
+#Fibonacci series without using 3rd variable:
+
+Number = int(input("Enter the number:"))
+
+n1 = 0
+n2 = 1
+
+if Number == 0:
+    print(Number)
+else:
+    for num in range(0,Number):
+        if num == 1:
+            N = num
+        else:
+            N = n1 + n2
+            n1 = n2
+            n2 = N
+            
+            print(N)
