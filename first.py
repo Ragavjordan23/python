@@ -309,3 +309,41 @@ else:
             n2 = N
             
             print(N)
+
+for col in range(5,4,-1):
+    print(col, end = ' ')
+print()
+for col in range(5,3,-1):
+    print(col, end = ' ')
+print()
+for col in range(5,2,-1):
+    print(col, end = ' ')
+print()
+for col in range(5,1,-1):
+    print(col, end = ' ')
+print()
+for col in range(5,0,-1):
+    print(col, end = ' ')
+print()
+
+no = 2
+while no<=6:
+    for col in range(1,no):
+        print(col, end = ' ')
+    print()
+    no = no+1
+    
+for no in range(2,6):
+      for col in range(1,no):
+        print(col, end = ' ')
+    print()
+    no = no+1
+    
+mailid = input("Enter your mail id")
+
+alphabets = 0
+digits = 0
+special = 0
+
+for i in range(len(mailid)):
+    print(mailid[i])
