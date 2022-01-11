@@ -347,3 +347,11 @@ special = 0
 
 for i in range(len(mailid)):
     print(mailid[i])
+
+
+no = 1
+for row in range(2,6):
+	for star in range(1,row):
+		print(no*row-1, end = ' ')
+		no+=1
+	print() 
