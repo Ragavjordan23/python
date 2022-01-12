@@ -355,3 +355,12 @@ for row in range(2,6):
 		print(no*row-1, end = ' ')
 		no+=1
 	print() 
+
+no =6
+binary = ''
+while no>0:
+    val = no%2
+    binary = str(val) + binary
+    no = no//2
+else:
+    print(binary)
