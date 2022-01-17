@@ -364,3 +364,4 @@ while no>0:
     no = no//2
 else:
     print(binary)
+
