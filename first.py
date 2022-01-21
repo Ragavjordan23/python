@@ -370,3 +370,9 @@ for row in range(2,7):
         print(col, end = " ")
     print() 
 
+#Treverse using slicing method:
+arr = [1, 2, 3, 4, 5]
+print("Array is :",arr)
+ 
+res = arr[::-1] #reversing using list slicing
+print("Resultant new reversed array:",res)
