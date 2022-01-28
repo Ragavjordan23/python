@@ -1,0 +1,17 @@
+for i in range(7):
+    for count in range(2):
+        print(i * "*", end = '')
+        for num in range(6-i):
+            print(" ", end = ' ')
+        print(i * "*",end = '')
+    print()
+    
+    #   output:
+    
+   # *          **          *
+   # **        ****        **
+   # ***      ******      ***
+   # ****    ********    ****
+   # *****  **********  *****
+   # ************************
+
