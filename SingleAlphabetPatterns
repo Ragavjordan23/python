@@ -1,4 +1,50 @@
 for star in range(6):
+  if star!=0:
+    print("*", end = ' ')
+  else:
+    print(" ", end = ' ')
+print()
+for row in range(7):
+  for star in range(7):
+    if star==0 or star==6: 
+      print("*", end = ' ')
+    else:
+      print(" ", end = ' ')
+  print()
+for star in range(6):
+  if star!=0:
+    print("*", end = ' ')
+  else:
+    print(" ", end = ' ')
+print()
+for row in range(7):
+  for star in range(7):
+    if star==0 or star==6: 
+      print("*", end = ' ')
+    else:
+      print(" ", end = ' ')
+  print()
+  
+# output:
+
+  * * * * * 
+*           * 
+*           * 
+*           * 
+*           * 
+*           * 
+*           * 
+*           * 
+  * * * * * 
+*           * 
+*           * 
+*           * 
+*           * 
+*           * 
+*           * 
+*           * 
+
+for star in range(6):
   print("*", end = ' ')
 print()
 for row in range(7):
@@ -152,6 +198,41 @@ for star in range(7):
 *
 *
 
+for row in range(7):
+  for star in range(7):
+    if star==0 or star==6: 
+      print("*", end = ' ')
+    else:
+      print(" ", end = ' ')
+  print()
+for star in range(7):
+  print("*", end = ' ')
+print()
+for row in range(7):
+  for star in range(7):
+    if star==0 or star==6: 
+      print("*", end = ' ')
+    else:
+      print(" ", end = ' ')
+  print()
+  
+  # output:
+  
+*           * 
+*           * 
+*           * 
+*           * 
+*           * 
+*           * 
+*           * 
+* * * * * * * 
+*           * 
+*           * 
+*           * 
+*           * 
+*           * 
+*           * 
+*           * 
 
 for star in range(7):
     print("* ",end =' ')
@@ -203,6 +284,39 @@ print()
          *           
          *           
   *   * 
+  
+for row in range(7):
+  for star in range(7):
+    if star==0 or star==7-row: 
+      print("*", end = ' ')
+    else:
+      print(" ", end = ' ')
+  print()
+for row in range(7):
+  for star in range(7):
+    if star==0 or star==row-0: 
+      print("*", end = ' ')
+    else:
+      print(" ", end = ' ')
+  print()
+  
+  # output:
+  
+*             
+*           * 
+*         *   
+*       *     
+*     *       
+*   *         
+* *           
+*             
+* *           
+*   *         
+*     *       
+*       *     
+*         *   
+*           * 
+
 
 for star in range(7):
   print("*", end = '\n')
@@ -221,8 +335,48 @@ print()
 *
 * * * * * * * 
 
-for star in range(7):
-  print("*", end = ' ')
+for row in range(7):
+    for star in range(7):
+        if star==0 or star==6 or row<=3.5  and row==star or row<=3.5 and star==6-row : 
+            print("*", end = ' ')
+        else:
+            print(" ", end = ' ')
+    print()
+    
+# output:
+
+*           * 
+* *       * * 
+*   *   *   * 
+*     *     * 
+*           * 
+*           * 
+*           * 
+
+for row in range(7):
+  for star in range(7):
+    if star==0 or star==row-0 or star==6: 
+      print("*", end = ' ')
+    else:
+      print(" ", end = ' ')
+  print()
+  
+  # output:
+  
+*           * 
+* *         * 
+*   *       * 
+*     *     * 
+*       *   * 
+*         * * 
+*           * 
+
+  
+for star in range(6):
+  if star!=0:
+    print("*", end = ' ')
+  else:
+    print(" ", end = ' ')
 print()
 for row in range(7):
   for star in range(7):
@@ -231,13 +385,16 @@ for row in range(7):
     else:
       print(" ", end = ' ')
   print()
-for star in range(7):
-  print("*", end = ' ')
+for star in range(6):
+  if star!=0:
+    print("*", end = ' ')
+  else:
+    print(" ", end = ' ')
 print()
 
 #output:
 
-* * * * * * * 
+  * * * * * 
 *           * 
 *           * 
 *           * 
@@ -245,9 +402,9 @@ print()
 *           * 
 *           * 
 *           * 
-* * * * * * * 
+  * * * * * 
 
-for star in range(7):
+for star in range(6):
   print("*", end = ' ')
 print()
 for row in range(7):
@@ -257,7 +414,7 @@ for row in range(7):
     else:
       print(" ", end = ' ')
   print()
-for star in range(7):
+for star in range(6):
   print("*", end = ' ')
 print()
 for row in range(7):
@@ -270,7 +427,7 @@ for row in range(7):
   
   # output:
   
-* * * * * * * 
+* * * * * * 
 *           * 
 *           * 
 *           * 
@@ -278,7 +435,7 @@ for row in range(7):
 *           * 
 *           * 
 *           * 
-* * * * * * * 
+* * * * * * 
 *             
 *             
 *             
@@ -328,7 +485,10 @@ for row in range(7):
 *           * 
 
 for star in range(7):
-  print("*", end = ' ')
+  if star!=0:
+    print("*", end = ' ')
+  else:
+    print(" ", end = ' ')
 print()
 for row in range(7):
   for star in range(7):
@@ -337,8 +497,11 @@ for row in range(7):
     else:
       print(" ", end = ' ')
   print()
-for star in range(7):
-  print("*", end = ' ')
+for star in range(6):
+  if star!=0:
+    print("*", end = ' ')
+  else:
+    print(" ", end = ' ')
 print()
 for row in range(7):
   for star in range(7):
@@ -347,13 +510,13 @@ for row in range(7):
     else:
       print(" ", end = ' ')
   print()
-for star in range(7):
+for star in range(6):
   print("*", end = ' ')
 print()
 
 # output:
 
-* * * * * * * 
+ * * * * * * 
 *             
 *             
 *             
@@ -361,7 +524,7 @@ print()
 *             
 *             
 *             
-* * * * * * * 
+ * * * * * * 
             * 
             * 
             * 
@@ -369,7 +532,7 @@ print()
             * 
             * 
             * 
-* * * * * * * 
+* * * * * * 
 
 
 for star in range(7):
@@ -384,6 +547,7 @@ for row in range(7):
     print() 
     
     # output:
+    
 *  *  *  *  *  *  *  
          *           
          *           
@@ -400,9 +564,12 @@ for row in range(7):
     else:
       print(" ", end = ' ')
   print()
-for star in range(7):
-  print("*", end = ' ')
-print() 
+for star in range(6):
+  if star!=0:
+    print("*", end = ' ')
+  else:
+    print(" ", end = ' ')
+print()  
 
 # output:
 
@@ -413,7 +580,93 @@ print()
 *           * 
 *           * 
 *           * 
+ * * * * * * 
+
+for row in range(4):
+    for star in range(8):
+        if star==row or star==6-row:
+           print("*", end = ' ')
+        else:
+           print(" ", end = ' ')
+    print()
+    
+ # output:
+ 
+ *          *   
+  *       *     
+    *   *       
+      *         
+
+ for row in range(7,-1,-1):
+    for star in range(7):
+        if star==0 or star==6 or row<=3.5  and row==star or row<=3.5 and star==6-row : 
+            print("*", end = ' ')
+        else:
+            print(" ", end = ' ')
+    print()
+    
+ # output:
+ 
+*           * 
+*           * 
+*           * 
+*           * 
+*     *     * 
+*   *   *   * 
+* *       * * 
+*           * 
+
+for row in range(7):
+    for star in range(7):
+        if  row<=7  and row==star or row<=7 and star==6-row : 
+            print("*", end = ' ')
+        else:
+            print(" ", end = ' ')
+    print()
+    
+# output:
+
+*           * 
+  *       *   
+    *   *     
+      *       
+    *   *     
+  *       *   
+*           * 
+
+for row in range(7):
+    for star in range(7):
+        if  row<=3.5  and row==star or row<=37 and star==6-row : 
+            print("*", end = ' ')
+        else:
+            print(" ", end = ' ')
+    print()
+    
+# output:
+
+*           * 
+  *       *   
+    *   *     
+      *       
+    *         
+  *           
+*             
+
+for row in range(7):
+    for star in range(7):
+        if row==0 and row<=6  and row<=6 or star==6-row or row==6: 
+            print("*", end = ' ')
+        else:
+            print(" ", end = ' ')
+    print()
+    
+# output:
+
+* * * * * * * 
+          *   
+        *     
+      *       
+    *         
+  *           
 * * * * * * * 
 
-
-  
