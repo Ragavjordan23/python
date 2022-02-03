@@ -715,7 +715,7 @@ for row in range(7):
 
 for row in range(7):
     for star in range(7):
-        if  row<=3.5  and row==star or row<=37 and star==6-row : 
+        if  row<=3.5  and row==star or row<=7 and star==6-row : 
             print("*", end = ' ')
         else:
             print(" ", end = ' ')
