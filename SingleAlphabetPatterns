@@ -198,6 +198,39 @@ for star in range(7):
 *
 *
 
+for star in range(5):
+    if star!=0:
+          print("*", end = ' ')
+    else:
+        print(" ", end = ' ')
+print()
+for row in range(7):
+    for star in range(7):
+        if (star==0 and star<3.5 or row==3 and star>2) or star==6 and row!=0 and row!=1 and row!=2: 
+            print("*", end = ' ')
+        else:
+            print(" ", end = ' ')
+    print()
+for star in range(7):
+    if star!=0 and star!=6:
+        print("*", end = ' ')
+    else:
+        print(" ", end = ' ')
+print()	
+
+# output:
+
+  * * * * 
+*             
+*             
+*             
+*     * * * * 
+*           * 
+*           * 
+*           * 
+  * * * * * 
+
+
 for row in range(7):
   for star in range(7):
     if star==0 or star==6: 
@@ -287,7 +320,7 @@ print()
   
 for row in range(7):
   for star in range(7):
-    if star==0 or star==7-row: 
+    if star==0 or star==6-row: 
       print("*", end = ' ')
     else:
       print(" ", end = ' ')
@@ -302,13 +335,13 @@ for row in range(7):
   
   # output:
   
-*             
 *           * 
 *         *   
 *       *     
 *     *       
 *   *         
 * *           
+*             
 *             
 * *           
 *   *         
