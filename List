@@ -104,3 +104,98 @@ for i in range(l1 - 2):
 		
 -----
 
+Print continues three times:
+
+# input : l =[5,10,15,15,15,20,20]	
+# output: 15   
+
+l =[5,10,15,15,15,20,20]
+#   0  1  2  3  4  5  6
+
+l1 = len(l)
+
+for i in range(l1 - 2):
+    if l[i] == l[i+1] and l[i+1] == l[i+2]:
+        print(l[i])
+ 
+--------------
+
+# input: l = [5,10,15,20,25,30]
+# output:
+# total no of even numbers: 3
+# total no of odd numbers: 3
+
+l =[5,10,15,20,25,30]
+  # 0  1  2  3  4  5
+
+even = 0
+odd = 0
+
+for i in l: 
+    if i%2==0:
+        even += 1 
+    else:
+        odd += 1
+print("Total no of even numbers: ", even)
+print("Total no of odd numbers: ", odd)
+
+-------
+
+# input: one two three four
+# output: one owt three ruof
+		
+word=input("Enter sentance: ")
+s=word.split()
+words=''
+for i in range(len(s)):
+    if i%2==0:
+        first=s[i]
+        words +=first+" "
+    else:
+        l=s[i]
+        sec=l[::-1]
+        words+=sec+" "
+         
+print(words)
+
+---------
+
+# input: "He is a good boy"
+# output: boy good a is He
+
+l = "He is a good boy"
+ #   0  1  2  3   4
+l1 = l.split()
+l2 =""
+
+for word in range(len(l1)-1,-1,-1):
+    l2 = l2+l1[word]+" "
+print(l2)
+
+--------
+
+# input:  He a boy
+#         is good 
+#output:  He is a good boy
+
+s1 = 'He a boy'
+s2 = 'is good'
+
+name1 = s1.split()
+name2 = s2.split()
+name3 = len(name1) if len(name1)<len(name2)else len(name2)
+l = ' '
+
+for i in range(name3):
+    l = l + name1[i] + " " + name2[i] + " " 
+
+l1 = len(name1) if len(name1)>len(name2)else len(name2)
+
+for i in range(name3,l1):
+    if len(name2)-l1>=0:
+        l = l + name2[i] + " "
+    else:
+        l = l + name1[i] + " "
+print(l)
+
+------
