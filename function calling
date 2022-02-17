@@ -1,0 +1,104 @@
+# linear Search
+
+def linear_Search(l):
+    
+    i = 0
+    key = int(input("Enter the value : "))
+    while i<len(l):
+        if l[i] == key:
+            print("present")
+            break
+        i+=1
+
+    else:
+        print("not present")
+	  
+l = [10,15,20,25,30]
+	  
+linear_Search(l)
+
+# output:
+
+Enter the value : 15
+present
+
+Enter the value : 87
+not present
+
+---
+# Binary Search 
+
+def Binary_Search(l):
+    
+    key = int(input("Enter no:"))
+
+    min =0
+    max = len(l)-1
+    while min<=max:
+        mid = (min+max)//2
+        if key == l[mid]:
+            print("Key is present at", mid)
+            break
+        elif key>l[mid]:
+            min = mid+1
+        elif key<l[mid]:
+            max = mid - 1
+
+    else:
+        print("Key is not present")
+
+bst = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31]
+
+Binary_Search(bst)
+	  
+-----
+l = eval(input("Emter no : "))
+print(l)
+	
+# output:
+
+Enter no:23
+Key is present at 22
+
+---
+# bubble sort
+
+def bubble_sort(list1):  
+     
+    srink = sorted(list1) 
+    return srink
+
+list1 = [5, 3, 8, 6, 7, 2]  
+print("The unsorted list is: ", list1)   
+print("The sorted list is: ", bubble_sort(list1))
+
+# output:
+  
+The unsorted list is:  [8, 7, 5, 3, 2, 0]
+The sorted list is:  [0, 2, 3, 5, 7, 8]
+
+---
+# prime number
+
+def prime_number(num):
+    
+    if num > 1:
+        for i in range(2,int(num/2)+1):
+            if (num % i) == 0:
+                print(num,"is not a prime number")
+                break
+        else:
+             print(num,"is a prime number")
+    else:
+         print(num,"is not a prime number") 
+        
+num = int(input("ENter a number: "))
+prime_number(num)
+
+# output:
+
+ENter a number: 7
+7 is a prime number
+
+ENter a number: 8
+8 is not a prime number
