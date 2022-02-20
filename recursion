@@ -1,0 +1,86 @@
+1) count of digits:
+
+def count(a,d=0):
+    
+    if a >0: 
+      
+        c=a//10 # 12
+        
+        d+=1 
+        
+        return count(c,d) # 12, 
+    else:
+        print(d)
+
+i=int(input("Enter input : ")) # 1234
+count(i)
+
+# output:
+Enter input : 1234
+4
+
+----------------------------------
+
+2) addition of digits:
+
+def count(a,d=0):
+    
+    if a >0: 
+        
+        c=a%10 
+        e=a//10
+        d+=c
+        
+        return count(e,d)
+    else:
+        print(d)
+
+i=int(input("Enter input : "))
+count(i)
+
+# output:
+
+Enter input : 456
+15
+
+---------------------------------
+
+3) palindrome number
+
+def pali(string):
+    if(string==string[::-1]):
+          print("The string is a palindrome")
+    else:
+          print("Not a palindrome")
+      
+      
+string=input(("Enter a string:"))
+pali(string)
+	  
+# output:
+Enter a string:11
+The string is a palindrome
+
+Enter a string:12
+Not a palindrome
+
+------------------------------------
+
+4) Factorial 
+
+def fact(n):
+    if n == 1:
+        return n
+    else:
+        return n*fact(n-1)
+
+num = int(input("Enter number finding factorial : "))
+
+print(fact(num))
+
+# output:
+Enter number finding factorial : 3     
+6
+
+Enter number finding factorial : 5
+120
