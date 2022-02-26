@@ -1,0 +1,37 @@
+# outside the class:
+
+class Employee:
+    def __init__(self):
+        self.name = "Ragav"
+        self.country = "Namakkal"
+        
+    def assign(self):
+        self.dept = "developer"
+        print(self.dept)
+        #del self.dept 
+        
+e1 = Employee()
+e1.exp = 8
+e1.assign()
+print(e1.__dict__)
+del e1.exp # - for delete
+print(e1.__dict__)
+
+# Inner class
+	  
+class Home:
+    
+    def __init__(self):
+        self.hhh = self.Hall()
+    
+    def estimate_cost(self):
+        print("Home Estimation")
+        
+    class Hall:
+        
+        def build(self):
+            print("Building hall")
+            
+h = Home()
+h.estimate_cost() 
+h.hhh.build()
