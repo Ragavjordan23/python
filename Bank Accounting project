@@ -1,0 +1,72 @@
+# Bank Accounting:
+
+class Account:
+    def __init__(self,name,balance,minimum_balance):
+        self.name=name
+        self.balance=balance
+        self.minimum_balance = minimum_balance
+        
+    def deposit(self,money):
+        current_balance=self.balance+money
+        return current_balance
+    
+    def withdraw(self,money):
+        current_balance=self.balance-money
+        return current_balance
+    
+    def enquiry(self):
+        return self.balance
+        
+    def current(self):
+        current=self.balance
+        print("current balance",current)
+    
+    def saving(self):
+        save=self.balance
+        print("saving balance",save)
+        
+class Current(Account):
+    def __init__(self,name,balance,minimum_balance):
+        self.name=name
+        self.balance=balance
+        self.minimum_balance=minimum_balance
+    
+    def check(self):
+        super().current()
+        
+class Savings(Account):
+    def __init__(self,name,balance,minimum_balance):
+        self.name=name
+        self.balance=balance
+        self.minimum_balance=minimum_balance
+        
+    def save(self):
+        super().saving()
+    
+name=input("Enter account holder name : ")    
+
+c=Current(name,1000,100)
+print("deposite Money",c.deposit(100))
+print("withdraw Money",c.withdraw(10))
+c.check()
+
+s=Savings("gowtham",1000,100)
+s.save()
+
+# o/p
+
+'''Enter account holder name : jordan
+deposite Money 1100
+withdraw Money 990
+current balance 1000
+saving balance 1000'''
+
+
+
+
+
+
+
+
+
+
