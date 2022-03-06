@@ -1,0 +1,19 @@
+# line,words,alpha with given file:
+
+import os,sys
+file_name = input("Enter file name")
+if os.path.isfile(file_name):
+    f = open(file_name,"r")
+else:
+    print("File doe not exist")
+    
+lineCount = wordCount = alphaCount = 0
+for line in f:
+    lineCount+=1
+    alphaCount = alphaCount+len(line)
+    words = line.split()
+    wordCount = wordCount + len(words)
+else:
+    print(lineCount)
+    print(alphaCount)
+    print(wordCount)
