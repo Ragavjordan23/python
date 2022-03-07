@@ -55,11 +55,11 @@ s.save()
 
 # o/p
 
-'''Enter account holder name : jordan
+Enter account holder name : jordan
 deposite Money 1100
 withdraw Money 990
 current balance 1000
-saving balance 1000'''
+saving balance 1000
 
 
 
