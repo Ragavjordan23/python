@@ -1,0 +1,115 @@
+import sqlite3
+connection = sqlite3.connect("/home/ragavjordan/Documents/Python10/ABCD.db")
+print("Database opened successfully")
+connection.execute("create table contactdetails (id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT NOT NULL, email TEXT UNIQUE NOT NULL, address TEXT NOT NULL)")
+print("Table created successfully")
+connection.close() 
+--
+# delete the table after the connection:
+	  
+import sqlite3
+connection = sqlite3.connect("/home/ragavjordan/Documents/Python10/ABCD.db")
+print("Database opened successfully")
+cursor = connection.cursor()
+cursor.execute('''DROP TABLE contactdetails;''') # delete
+connection.close()
+--
+# contact details:
+
+import sqlite3
+connection = sqlite3.connect("/home/ragavjordan/Documents/Python10/ABCD.db")
+print("Database opened successfully")
+cursor = connection.cursor()
+sql_command = """
+             CREATE TABLE Student(
+             RollNo INTEGER PRIMARY KEY,
+             Sname VARCHAR(20),
+             Grade CHAR(1),
+             gender CHAR(1),
+             Average DECIMAL(5,2),
+             birth_date DATE);"""
+cursor.execute(sql_command)
+sql_command = """INSERT INTO
+     Student(RollNo,Sname,Grade,Gender,Average,birth_date)
+                VALUES(null, "Akshay", 'B','M', "87.8","2001-12-12");"""
+cursor.execute(sql_command)
+connection.commit()  #ctrl+s
+connection.close()
+print("Student Table Created") 
+
+--
+# list of data in table:
+	  
+import sqlite3
+connection = sqlite3.connect("/home/ragavjordan/Documents/Python10/ABCD.db")
+print("Database opened successfully")
+cursor = connection.cursor()
+student_data = [("Thiru","C","M","75.2","1998-05-17"),
+                ("Raja","B","F","75.2","1998-04-17"),
+                ("Bala","A","M","72.2","1999-05-17"),
+                ("Kannan","D","M","87.2","1998-05-27")]
+for p in student_data:
+    format_str = """INSERT INTO Student(Rollno, Sname, Grade, Gender,Average,birth_date)
+                    VALUES(Null, "{name}","{gr}","{gender}","{avg}","{birthdate}");"""
+        # {} space holder
+    sql_command = format_str.format(name=p[0],gr=p[1],gender=p[2],
+                                    avg=p[3],birthdate=p[4])
+    cursor.execute(sql_command)
+connection.commit()
+connection.close()
+print("Records added")
+print("Student Table Created") 
+--
+# fetch all:
+	  
+import sqlite3
+connection = sqlite3.connect("/home/ragavjordan/Documents/Python10/ABCD.db")
+print("Database opened successfully")
+cursor = connection.cursor()
+cursor.execute("SELECT * from Student") # *- every column value
+ans = cursor.fetchall()
+for i in ans:
+    print(i) 
+--
+# fetchone
+import sqlite3
+connection = sqlite3.connect("/home/ragavjordan/Documents/Python10/ABCD.db")
+print("Database opened successfully")
+cursor = connection.cursor()
+cursor.execute("SELECT * from Student") # *- every column value
+result = cursor.fetchone() #Data Values 
+print(result)
+'''while result is not None:
+    print(result)
+    result = cursor.fetchone() #next line '''
+---
+# only grade fetchingall
+import sqlite3
+connection = sqlite3.connect("/home/ragavjordan/Documents/Python10/ABCD.db")
+print("Database opened successfully")
+cursor = connection.cursor()
+cursor.execute("SELECT DISTINCT(Grade) from Student") # *- every column value
+result = cursor.fetchone() #Data Values 
+print(result)
+while result is not None:
+    print(result)
+    result = cursor.fetchone() #next line 
+--
+# showing expect AB grade 
+import sqlite3
+connection = sqlite3.connect("/home/ragavjordan/Documents/Python10/ABCD.db")
+print("Database opened successfully")
+cursor = connection.cursor()
+cursor.execute("SELECT Rollno,sname from student where grade<>'A' and Grade<>'B'")
+result = cursor.fetchall()
+print(*result,sep='\n')
+--
+# delete
+	  
+import sqlite3
+connection = sqlite3.connect("/home/ragavjordan/Documents/Python10/ABCD.db")
+print("Database opened successfully")
+connection.execute("DELETE from Student where Rollno='2'")
+connection.commit()
+print("Total no. of rows deleted",connection.total_changes)
+connection.close()
