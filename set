@@ -1,0 +1,9 @@
+myset = set(["a", "b", "c"])
+print(myset)
+
+myset.add("d")
+print(myset)
+
+output:
+{'c', 'b', 'a'}
+{'d', 'c', 'b', 'a'}
