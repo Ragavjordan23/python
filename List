@@ -1,3 +1,14 @@
+List [] - used to store ordered datatypes, it is mutable.
+
+List functions - 
+1. append() - used to add @ last
+2. remove() - used to remove value when it can be the value or position based
+3. len() - used to find length of values.
+4. max() - used to find maximum values.
+5. min() - used to find minimum values.
+6. list() - used to turn datatype sequence into list.
+
+
 # Transpose of matrix:
 l1 = [ [10,20,30],
        [40,50,60],
