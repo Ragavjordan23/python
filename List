@@ -8,6 +8,16 @@ List functions -
 5. min() - used to find minimum values.
 6. list() - used to turn datatype sequence into list.
 
+## Program to remove the duplicate element of the list?
+
+l1 = [1,1,2,2,3,3,4,4,5,5]
+l2 = []
+for i in l1:
+    if i not in l2:
+        l2.append(i)
+print(l2)
+
+====================
 
 # Transpose of matrix:
 l1 = [ [10,20,30],
