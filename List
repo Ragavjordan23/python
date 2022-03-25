@@ -17,6 +17,32 @@ for i in l1:
         l2.append(i)
 print(l2)
 
+------------------------
+# program to find the sum of the element in the list.
+
+l1 = [1,2,3,4,5,6,7,8,9,10]
+
+sum = 0
+
+for i in l1:
+    sum = sum+i
+print(sum)
+
+o/p:
+55
+-------------------
+# program to find the lists consist of at least one common element.
+
+l1 = [1,2,3,4,5]
+l2 = [6,7,3,9,10]
+
+for i in l1:
+    for j in l2:      
+        if i==j:
+            print(i)
+
+o/p:
+3
 ====================
 
 # Transpose of matrix:
