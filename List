@@ -30,6 +30,20 @@ print(sum)
 
 o/p:
 55
+---------------------------
+# index()
+
+a = [1,5,3]
+b = a.index(5)
+print(b)
+
+# o/p: 1
+ 
+q = [4,6,8]
+s = q.index(6)
+print(s)
+
+# o/p: 1
 -------------------
 # program to find the lists consist of at least one common element.
 
