@@ -7,6 +7,7 @@ List functions -
 4. max() - used to find maximum values.
 5. min() - used to find minimum values.
 6. list() - used to turn datatype sequence into list.
+----------------------
 
 ## Program to remove the duplicate element of the list?
 
@@ -30,6 +31,14 @@ print(sum)
 
 o/p:
 55
+--------------------------
+# list comprehension:
+
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+l = [i for i in fruits if "a" not in i]
+
+print(l)
+o/p: ["cherry","kiwi"]
 ---------------------------
 # index()
 
