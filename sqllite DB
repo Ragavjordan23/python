@@ -104,7 +104,7 @@ cursor.execute("SELECT Rollno,sname from student where grade<>'A' and Grade<>'B'
 result = cursor.fetchall()
 print(*result,sep='\n')
 --
-# delete
+# delete 
 	  
 import sqlite3
 connection = sqlite3.connect("/home/ragavjordan/Documents/Python10/ABCD.db")
