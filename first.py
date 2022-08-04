@@ -13,8 +13,8 @@ print(no1 == no2) # output: True
 
 #Escape Characters
 
-print("Hi\t GoodMorning") 
-print("Hi\n GoodMorning")
+print("Hi\t GoodMorning") # \t gives
+print("Hi\n GoodMorning") # \n goes to nextline
 
 #output: 
 # Hi   GoodMorning
